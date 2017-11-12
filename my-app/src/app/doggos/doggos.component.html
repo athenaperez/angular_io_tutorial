@@ -1,4 +1,4 @@
-<h2>{{ dog.name | uppercase }} Details:</h2>
+<!-- <h2>{{ dog.name | uppercase }} Details:</h2>
 <div  class="title_info"><span>id: </span>{{dog.id}}</div>
 <div class="title_info"><span>name: </span>{{dog.name}}</div>
 
@@ -7,5 +7,11 @@
   <label> 
     <input [(ngModel)]="dog.name" placeholder="name">
   </label>
-</div>
+</div> -->
 
+<h2>The Doggos</h2>
+<ul>
+  <li *ngFor="let dog of puppers">  
+    {{dog.id}} {{dog.name}}
+  </li>
+</ul>

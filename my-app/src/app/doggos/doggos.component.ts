@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Dog } from '../dog';
+import { PUPPERS } from '../mock-doggos'
 
 @Component({
   selector: 'app-doggos',
@@ -12,8 +13,12 @@ export class DoggosComponent implements OnInit {
     id: 1,
     name: 'Hebba'
   };
+  
+  puppers = PUPPERS;
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit() {
   }

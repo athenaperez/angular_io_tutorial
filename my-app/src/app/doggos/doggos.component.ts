@@ -9,20 +9,20 @@ import { PUPPERS } from '../mock-doggos'
 })
 
 export class DoggosComponent implements OnInit {
-  dog: Dog = {
-    id: 1,
-    name: 'Hebba'
-  };
   
   puppers = PUPPERS;
 
-  constructor() {
+  selectedDog: Dog;
 
-   }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  onSelect(dog: Dog): void {
+    this.selectedDog= dog;
+  }
 }
 
 

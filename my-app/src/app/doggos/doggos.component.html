@@ -1,18 +1,24 @@
-<!-- <h2>{{ dog.name | uppercase }} Details:</h2>
-<div  class="title_info"><span>id: </span>{{dog.id}}</div>
-<div class="title_info"><span>name: </span>{{dog.name}}</div>
-
-
-<div>
-  <label> 
-    <input [(ngModel)]="dog.name" placeholder="name">
-  </label>
-</div> -->
-
 <h2>The Doggos</h2>
 <ul class="doggos_list">
-  <li *ngFor="let dog of puppers">  
-    <span class="badge">{{dog.id}}</span> 
-    <span class="puppers">{{dog.name | uppercase}}</span>
+  <li *ngFor="let dog of puppers" 
+    (click)="onSelect(dog)">  
+      <span class="badge">{{dog.id}}</span> 
+      <span class="puppers">{{dog.name}}</span>
   </li>
 </ul>
+
+<div *ngIf="selectedDog">
+  <h2>{{ selectedDog.name}} Details:</h2>
+  <div>
+    <span>id: </span>{{selectedDog.id}}
+  </div>
+  <div>
+    <label>
+      name:
+        <input [(ngModel)]="selectedDog.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
+
+

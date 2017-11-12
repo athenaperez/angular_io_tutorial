@@ -1,14 +1,10 @@
-.title_info {
+/* .title_info {
     color: black;
     font-weight: bold;
 }
 
-.pupper_name {
-
-}
-
 .selected {
-    background-color: #CFD8DC !important;
+    background-color: pink !important;
     color: white;
 }
   
@@ -23,6 +19,7 @@
     background-color: #EEE;
     height: 1.6em;
     border-radius: 4px;
+    display: block;
 }
 
 .doggos_list li.selected:hover {
@@ -31,10 +28,11 @@
 }
 
 .doggos_list li:hover {
-    color: #607D8B;
-    background-color: red;
+    color: purple;
+    background-color: darkcyan;
     left: .1em;
   }
+
   .doggos_list .text {
     position: relative;
     top: -3px;
@@ -54,3 +52,8 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+
+  .floating {
+    float: right;
+    display: block;
+  } */

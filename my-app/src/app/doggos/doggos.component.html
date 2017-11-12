@@ -10,8 +10,9 @@
 </div> -->
 
 <h2>The Doggos</h2>
-<ul>
+<ul class="doggos_list">
   <li *ngFor="let dog of puppers">  
-    {{dog.id}} {{dog.name}}
+    <span class="badge">{{dog.id}}</span> 
+    <span class="puppers">{{dog.name | uppercase}}</span>
   </li>
 </ul>
